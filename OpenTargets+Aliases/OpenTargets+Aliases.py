@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[153]:
+# In[ ]:
 
 
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
@@ -35,13 +35,11 @@ def checkgeneexists(cookiezi):
         time.sleep(5)
         check = driver.find_elements_by_class_name("gc-gene-symbol")
         if check:
-            #print("New target found")
             replace = "https://www.genecards.org/cgi-bin/carddisp.pl?gene=" + driver.find_element_by_class_name("gc-gene-symbol").text
             vaxei = driver.find_element_by_class_name("gc-gene-symbol").text
             driver.get(replace)
             cat = 1
         else:
-            #print("Fuck")
             vaxei = "Target does not exist, nor does it have related targets! Try again"
             cat = 2
 
@@ -145,7 +143,7 @@ def getopentargets(genename):
         return "DNE", "DNE", "DNE", "DNE", "DNE", target2
 
 
-# In[155]:
+# In[ ]:
 
 
 diseaseconditions, names, genename, link1, link2, closestpossibletarget = getopentargets("dpp4") #change input string to a gene name
