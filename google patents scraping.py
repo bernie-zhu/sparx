@@ -73,8 +73,11 @@ with urllib.request.urlopen("http://ftp.ebi.ac.uk/pub/databases/genenames/hgnc/j
 
 response = requests.get("http://ftp.ebi.ac.uk/pub/databases/genenames/hgnc/json/locus_groups/protein-coding_gene.json")
 data = response.json()
+
+## uncomment this to use python's base json method, slower than pandas
 #symbols = [i['symbol'] for i in data['response']['docs']]
 
+## these two lines are unnecessary if top version is used, but it is much faster
 df = pd.DataFrame(data['response']['docs'])
 symbols = df['symbol'].tolist()
 print(df)
