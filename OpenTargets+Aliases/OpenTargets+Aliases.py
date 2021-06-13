@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[153]:
+# In[ ]:
 
 
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
@@ -17,13 +17,13 @@ import time
 
 def checkgeneexists(cookiezi):
     
-    driver = webdriver.Firefox()
+    driver = webdriver.Firefox(executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe')
                                  #if not working (not in env variables), paste in executable path to geckodriver.exe file
-                                 #executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe')
+                                 #executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe'
         
     replace = "https://www.genecards.org/cgi-bin/carddisp.pl?gene=" + cookiezi
     driver.get(replace)
-    time.sleep(1)
+    time.sleep(2)
     
     dog = driver.find_elements_by_id("aliases_descriptions")
     
@@ -35,13 +35,11 @@ def checkgeneexists(cookiezi):
         time.sleep(5)
         check = driver.find_elements_by_class_name("gc-gene-symbol")
         if check:
-            #print("New target found")
             replace = "https://www.genecards.org/cgi-bin/carddisp.pl?gene=" + driver.find_element_by_class_name("gc-gene-symbol").text
             vaxei = driver.find_element_by_class_name("gc-gene-symbol").text
             driver.get(replace)
             cat = 1
         else:
-            #print("Fuck")
             vaxei = "Target does not exist, nor does it have related targets! Try again"
             cat = 2
 
@@ -60,8 +58,7 @@ def genecards(osugame): #osugame input will be a gene name
     source =  "https://www.genecards.org/cgi-bin/carddisp.pl?gene=" + osugame   
 
     source, driver, alternatesearch, newtarget = checkgeneexists(osugame)
-    
-    time.sleep(5)
+    n = 0
     
     if alternatesearch != 2:
         table = driver.find_element_by_id("aliases_descriptions")
@@ -71,15 +68,30 @@ def genecards(osugame): #osugame input will be a gene name
         ensembl = ""
         mrekk = []
         check = 0
-
+        
+        
         for cat in aliasnames:
+            cow = 0
             numbers = ""
             sups = cat.find_elements_by_tag_name("sup")
-            for fish in sups:
-                numbers = numbers + " " + fish.text
+            if not sups:
+                sups = cat.find_elements_by_class_name("gc-ga-link")
+                cow = 1
+            #print(cow)
+            
+        
+            if cow == 0:
+                for fish in sups:
+                    numbers = numbers + " " + fish.text
+            elif cow == 1:
+                if ":" not in cat.text:
+                    for fish in sups:
+                        numbers = numbers + ", " + fish.text
+                numbers = numbers[2:]
+                numbers = " (" + numbers + ")"
             #print(cat.text)
             #print(numbers)
-            if numbers!= "":
+            if numbers!= "" and numbers!=" ()":
                 #print(cat.text.split(numbers)[0])
                 mrekk.append(cat.text.split(numbers)[0])
 
@@ -104,16 +116,28 @@ def genecards(osugame): #osugame input will be a gene name
 
 ############################################################################################
 
-
-def getopentargets(genename):
+ 
+def getopentargets(genename): #genename will be a gene name
 
     ensemblname, aliases,name, nd, genecardslink, searchno, target2 = genecards(genename)
-    
+    link = ""
+    woof = 0
     if searchno !=2:
         conditions = []
-        driver = nd #webdriver.Firefox() #executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe') #make sure this exists somewhere in a local, varies from user to user, and copy the path here
-        opentargetslink = "https://platform.opentargets.org/target/" + ensemblname + "/associations"
-
+        if ensemblname == "NOT":
+            nd.get("https://platform.opentargets.org/search?q=" + name + "&page=1")
+            time.sleep(2)
+            link = nd.find_element_by_class_name("jss28").get_attribute("href")
+            woof = 1
+        #print(link)
+        
+        driver = nd #webdriver.Firefox() #executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe' #make sure this exists somewhere in a local, varies from user to user, and copy the path here
+        
+        if woof == 0:
+            opentargetslink = "https://platform.opentargets.org/target/" + ensemblname + "/associations"
+        else:
+            opentargetslink = link
+        
         driver.get(opentargetslink)
         time.sleep(5)
 
@@ -145,11 +169,14 @@ def getopentargets(genename):
         return "DNE", "DNE", "DNE", "DNE", "DNE", target2
 
 
-# In[155]:
+# In[ ]:
 
 
-diseaseconditions, names, genename, link1, link2, closestpossibletarget = getopentargets("dpp4") #change input string to a gene name
+#getopentargets test
+
+diseaseconditions, names, genename, link1, link2, closestpossibletarget = getopentargets("hoxa4") #change input string to a gene name
 print(closestpossibletarget)
+    
 print(genename + " is also known as:")
 for rafis in names:
     print("                        " + rafis)
@@ -167,7 +194,22 @@ print("Source: " + link2)
 # In[ ]:
 
 
+#genecards test
 
+ensembl,names,genename, driver, link1, alternatesearch, closestpossibletarget = genecards("grep1") #change input string to a gene name
+print(closestpossibletarget)
+    
+print(genename + " is also known as:")
+for rafis in names:
+    print("                        " + rafis)
+print()
+print("Source: "  + link1)
+
+
+print(ensembl)
+
+
+driver.close()
 
 
 # In[ ]:
