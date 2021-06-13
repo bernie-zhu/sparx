@@ -17,9 +17,9 @@ import time
 
 def checkgeneexists(cookiezi):
     
-    driver = webdriver.Firefox()
+    driver = webdriver.Firefox(executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe')
                                  #if not working (not in env variables), paste in executable path to geckodriver.exe file
-                                 #executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe')
+                                 #executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe'
         
     replace = "https://www.genecards.org/cgi-bin/carddisp.pl?gene=" + cookiezi
     driver.get(replace)
@@ -125,13 +125,13 @@ def getopentargets(genename): #genename will be a gene name
     if searchno !=2:
         conditions = []
         if ensemblname == "NOT":
-            nd.get("https://platform.opentargets.org/search?q=grep1&page=1")
+            nd.get("https://platform.opentargets.org/search?q=" + name + "&page=1")
             time.sleep(2)
-            link = nd.find_element_by_class_name("jss27").get_attribute("href")
+            link = nd.find_element_by_class_name("jss28").get_attribute("href")
             woof = 1
         #print(link)
         
-        driver = nd #webdriver.Firefox() #executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe') #make sure this exists somewhere in a local, varies from user to user, and copy the path here
+        driver = nd #webdriver.Firefox() #executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe' #make sure this exists somewhere in a local, varies from user to user, and copy the path here
         
         if woof == 0:
             opentargetslink = "https://platform.opentargets.org/target/" + ensemblname + "/associations"
@@ -174,7 +174,7 @@ def getopentargets(genename): #genename will be a gene name
 
 #getopentargets test
 
-diseaseconditions, names, genename, link1, link2, closestpossibletarget = getopentargets("fam161b") #change input string to a gene name
+diseaseconditions, names, genename, link1, link2, closestpossibletarget = getopentargets("hoxa4") #change input string to a gene name
 print(closestpossibletarget)
     
 print(genename + " is also known as:")
