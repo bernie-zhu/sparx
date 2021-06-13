@@ -17,7 +17,7 @@ import time
 
 def checkgeneexists(cookiezi):
     
-    driver = webdriver.Firefox(executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe')
+    driver = webdriver.Firefox()
                                  #if not working (not in env variables), paste in executable path to geckodriver.exe file
                                  #executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe'
         
