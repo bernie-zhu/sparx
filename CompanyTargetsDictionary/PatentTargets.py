@@ -9,6 +9,17 @@ import gc
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium import webdriver
 import time
+import xlrd
+import os
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+from selenium import webdriver
+import time
+import pandas as pd
+import xlrd
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
 
 
 class PatentTargets:
@@ -28,12 +39,15 @@ class PatentTargets:
             main_url = "https://patents.google.com/"
             params = "?assignee=" + self.company + "&after=priority:20110609&type=PATENT&num=10&sort=new&page=" + str(
                 page)
+            # params = "?q=(tp53)&num=10&oq=(tp53)"
 
             res = requests.get(
                 "https://patents.google.com/xhr/query?url=assignee%3D" + self.company + "%26after%3Dpriority"
                                                                                         "%3A20110609%26type"
                                                                                         "%3DPATENT%26num%3D1"
                                                                                         "&exp=")
+            #res = requests.get("https://patents.google.com/xhr/query?url=q%3D(tp53)%26num%3D10%26oq%3D(tp53)&exp=")
+
             main_data = res.json()
             data = main_data['results']['cluster']
 
@@ -58,11 +72,38 @@ def targetintodict():
     del companyNames.companies
     del companyNames.names
     gc.collect
-    #diseases, aliases = TargetInformation.targetinformation()
-    aliases = TargetInformation.aliaslists
+    aliases = TargetInformation.targetinformation()
+    print(aliases)
 
     for company, links in allCompanies.items():
         targets = PatentTargets(company)
         allCompanies[company] = targets.targetsforpatents(targetfrequency, aliases, pages)
 
     return allCompanies
+
+def testparser():
+    targets = []
+    driver = webdriver.Firefox(
+        executable_path=r"C:\Python\Python38\geckodriver.exe")  # make sure this exists somewhere in a local, varies from user to user, and copy the path here
+    driver.get("https://patents.google.com/patent/US10738053B2/en?oq=US-10738053-B2")
+    time.sleep(5)
+    aliases = aliasesfromfile()
+    targets.append(Parsers.ParsePatent.parse(driver, aliases, 2))
+    driver.close
+    return targets
+
+
+def aliasesfromfile():
+    wb = xlrd.open_workbook(r"C:\Users\zaids\PycharmProjects\sparx\CompanyTargetsDictionary\Gene_Aliases_All.xls")  # read all genes from excel sheet
+    ws = wb.sheet_by_index(0)
+    x = len(ws.col_values(0))
+
+    genelist = ws.col_values(0)
+    genelist.pop(0)  # genelist = list of all target names
+    aliases = []
+    for dog in range(x):
+        x = ws.row_values(dog)
+        x[:] = [y for y in x if y]
+        x = x[1:]
+        aliases.append(x)
+    return aliases

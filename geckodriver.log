@@ -950,3 +950,970 @@ console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "res
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1623335498443	geckodriver	INFO	Listening on 127.0.0.1:59359
+1623335501541	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileLCPU9G"
+1623335502561	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileLCPU9G\\search.json.mozlz4", (void 0)))
+1623335505801	Marionette	INFO	Listening on port 53855
+1623335505908	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623335522677	Marionette	INFO	Stopped listening on port 53855
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623335748140	geckodriver	INFO	Listening on 127.0.0.1:49982
+1623335751242	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileC5yEke"
+1623335751743	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileC5yEke\\search.json.mozlz4", (void 0)))
+1623335754932	Marionette	INFO	Listening on port 65165
+1623335755003	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623335963536	Marionette	INFO	Stopped listening on port 65165
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623335996115	geckodriver	INFO	Listening on 127.0.0.1:61183
+1623335999241	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileoqJCue"
+1623335999738	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileoqJCue\\search.json.mozlz4", (void 0)))
+1623336002031	Marionette	INFO	Listening on port 57348
+1623336002458	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623336099671	Marionette	INFO	Stopped listening on port 57348
+[Parent 12608, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623336965729	geckodriver	INFO	Listening on 127.0.0.1:60474
+1623336968775	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileM1esmb"
+1623336969218	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileM1esmb\\search.json.mozlz4", (void 0)))
+1623336972173	Marionette	INFO	Listening on port 60482
+1623336972522	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1359170348, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1359170348, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1359170348 line 1 > eval, line 1: unreachable code after return statement
+1623336990738	Marionette	INFO	Stopped listening on port 60482
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623336992446	geckodriver	INFO	Listening on 127.0.0.1:60592
+1623336995489	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile9WKyl5"
+1623336995920	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile9WKyl5\\search.json.mozlz4", (void 0)))
+1623336998601	Marionette	INFO	Listening on port 60600
+1623336998720	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2004449407, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2004449407, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2004449407 line 1 > eval, line 1: unreachable code after return statement
+1623337016072	Marionette	INFO	Stopped listening on port 60600
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623337017360	geckodriver	INFO	Listening on 127.0.0.1:60712
+1623337020411	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileVuR995"
+1623337020833	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileVuR995\\search.json.mozlz4", (void 0)))
+1623337023507	Marionette	INFO	Listening on port 60720
+1623337023656	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2113282294, line 1: unreachable code after return statement
+1623337040038	Marionette	INFO	Stopped listening on port 60720
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623337041049	geckodriver	INFO	Listening on 127.0.0.1:60836
+1623337044130	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilea4j8hu"
+1623337044541	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilea4j8hu\\search.json.mozlz4", (void 0)))
+1623337047624	Marionette	INFO	Listening on port 60844
+1623337047881	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1148255368, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1148255368, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1148255368 line 1 > eval, line 1: unreachable code after return statement
+1623337064392	Marionette	INFO	Stopped listening on port 60844
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623337065644	geckodriver	INFO	Listening on 127.0.0.1:60956
+1623337068725	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileOQwRxR"
+1623337069149	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileOQwRxR\\search.json.mozlz4", (void 0)))
+1623337071906	Marionette	INFO	Listening on port 60964
+1623337071939	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=548656428, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=548656428, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=548656428 line 1 > eval, line 1: unreachable code after return statement
+1623337087162	Marionette	INFO	Stopped listening on port 60964
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623337088600	geckodriver	INFO	Listening on 127.0.0.1:61073
+1623337091639	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileNtkCFt"
+1623337092036	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileNtkCFt\\search.json.mozlz4", (void 0)))
+1623337094862	Marionette	INFO	Listening on port 61081
+1623337095360	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623337112026	Marionette	INFO	Stopped listening on port 61081
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623337113434	geckodriver	INFO	Listening on 127.0.0.1:61195
+1623337116482	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilexP7CbQ"
+1623337116880	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilexP7CbQ\\search.json.mozlz4", (void 0)))
+1623337119328	Marionette	INFO	Listening on port 61203
+1623337119673	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource:///modules/FaviconLoader.jsm, line 596: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1623337130430	Marionette	INFO	Stopped listening on port 61203
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623337224596	geckodriver	INFO	Listening on 127.0.0.1:61313
+1623337227673	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile3qS2ep"
+1623337228084	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile3qS2ep\\search.json.mozlz4", (void 0)))
+1623337230842	Marionette	INFO	Listening on port 61321
+1623337230898	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1457421826, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1457421826, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1457421826 line 1 > eval, line 1: unreachable code after return statement
+1623337309418	Marionette	INFO	Stopped listening on port 61321
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileufETvc"
+1623337282471	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileufETvc\\search.json.mozlz4", (void 0)))
+1623337285084	Marionette	INFO	Listening on port 61444
+1623337285334	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2056290421, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2056290421 line 1 > eval, line 1: unreachable code after return statement
+1623337310235	Marionette	INFO	Stopped listening on port 61444
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile9BHaQu"
+1623337298152	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile9BHaQu\\search.json.mozlz4", (void 0)))
+1623337300532	Marionette	INFO	Listening on port 61549
+1623337300996	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1086406144, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1086406144, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1086406144 line 1 > eval, line 1: unreachable code after return statement
+1623337310749	Marionette	INFO	Stopped listening on port 61549
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623337355893	geckodriver	INFO	Listening on 127.0.0.1:61647
+1623337359002	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileIsukMG"
+1623337359426	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileIsukMG\\search.json.mozlz4", (void 0)))
+1623337362117	Marionette	INFO	Listening on port 61655
+1623337362232	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=147580546, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=147580546, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=147580546 line 1 > eval, line 1: unreachable code after return statement
+1623337371959	Marionette	INFO	Stopped listening on port 61655
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623337372771	geckodriver	INFO	Listening on 127.0.0.1:61745
+1623337375856	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileZAbkGp"
+1623337376289	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileZAbkGp\\search.json.mozlz4", (void 0)))
+1623337378679	Marionette	INFO	Listening on port 61753
+1623337379098	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1059188691, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1059188691, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1059188691 line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+1623337384499	Marionette	INFO	Stopped listening on port 61753
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623337718917	geckodriver	INFO	Listening on 127.0.0.1:61843
+1623337722007	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileAvYtyP"
+1623337722455	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileAvYtyP\\search.json.mozlz4", (void 0)))
+1623337724939	Marionette	INFO	Listening on port 61851
+1623337725254	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=108544471, line 1: unreachable code after return statement
+1623337734803	Marionette	INFO	Stopped listening on port 61851
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623337735649	geckodriver	INFO	Listening on 127.0.0.1:61945
+1623337738704	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilezsZaFQ"
+1623337739111	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilezsZaFQ\\search.json.mozlz4", (void 0)))
+1623337741368	Marionette	INFO	Listening on port 61953
+1623337741423	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2010998126, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2010998126, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2010998126 line 1 > eval, line 1: unreachable code after return statement
+1623337745980	Marionette	INFO	Stopped listening on port 61953
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623337806012	geckodriver	INFO	Listening on 127.0.0.1:62041
+1623337809124	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileFjZ93X"
+1623337809609	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileFjZ93X\\search.json.mozlz4", (void 0)))
+1623337812344	Marionette	INFO	Listening on port 62049
+1623337812850	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=671210936, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=671210936, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=671210936 line 1 > eval, line 1: unreachable code after return statement
+1623340347243	Marionette	INFO	Stopped listening on port 62049
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623340487373	geckodriver	INFO	Listening on 127.0.0.1:64401
+1623340490437	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilevjs72I"
+1623340490790	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilevjs72I\\search.json.mozlz4", (void 0)))
+1623340492692	Marionette	INFO	Listening on port 64409
+1623340493117	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=700139224, line 1: unreachable code after return statement
+1623347790021	Marionette	INFO	Stopped listening on port 64409
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623680474472	geckodriver	INFO	Listening on 127.0.0.1:49673
+1623680477586	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilePIzNGp"
+1623680478753	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilePIzNGp\\search.json.mozlz4", (void 0)))
+1623680482161	Marionette	INFO	Listening on port 49687
+1623680482487	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=53298003, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=53298003, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=53298003 line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=53298003 line 1 > eval, line 1: ReferenceError: y is not defined
+1623693498908	Marionette	INFO	Stopped listening on port 49687
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623693507267	geckodriver	INFO	Listening on 127.0.0.1:65042
+1623693510321	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileU3i81N"
+1623693510753	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileU3i81N\\search.json.mozlz4", (void 0)))
+1623693513049	Marionette	INFO	Listening on port 65051
+1623693513525	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623693521410	Marionette	INFO	Stopped listening on port 65051
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623695895476	geckodriver	INFO	Listening on 127.0.0.1:63006
+1623695898518	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilej3Te1M"
+1623695899280	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilej3Te1M\\search.json.mozlz4", (void 0)))
+1623695901842	Marionette	INFO	Listening on port 63014
+1623695902224	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=506219001, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=506219001, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=506219001 line 1 > eval, line 1: unreachable code after return statement
+1623695913961	Marionette	INFO	Stopped listening on port 63014
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623695956469	geckodriver	INFO	Listening on 127.0.0.1:63127
+1623695959510	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilebbNu0S"
+1623695959882	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilebbNu0S\\search.json.mozlz4", (void 0)))
+1623695962096	Marionette	INFO	Listening on port 63135
+1623695962236	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=351932356, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=351932356, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=351932356 line 1 > eval, line 1: unreachable code after return statement
+1623695972981	Marionette	INFO	Stopped listening on port 63135
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623696133303	geckodriver	INFO	Listening on 127.0.0.1:52828
+1623696136345	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilehF7Nkc"
+1623696136706	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilehF7Nkc\\search.json.mozlz4", (void 0)))
+1623696139034	Marionette	INFO	Listening on port 52836
+1623696139057	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2097278963, line 1: unreachable code after return statement
+1623696149682	Marionette	INFO	Stopped listening on port 52836
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623696234990	geckodriver	INFO	Listening on 127.0.0.1:52103
+1623696238054	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileCdEZAu"
+1623696238397	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileCdEZAu\\search.json.mozlz4", (void 0)))
+1623696240758	Marionette	INFO	Listening on port 52273
+1623696241255	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=817719691, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=817719691, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=817719691 line 1 > eval, line 1: unreachable code after return statement
+1623696250448	Marionette	INFO	Stopped listening on port 52273
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623696298043	geckodriver	INFO	Listening on 127.0.0.1:49179
+1623696301096	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilenz3RAR"
+1623696301453	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilenz3RAR\\search.json.mozlz4", (void 0)))
+1623696303680	Marionette	INFO	Listening on port 49187
+1623696303819	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1248430956, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1248430956, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1248430956 line 1 > eval, line 1: unreachable code after return statement
+console.error: (new Error("Connection closed before committing the transaction.", "resource://gre/modules/Sqlite.jsm", 687))
+1623705483854	Marionette	INFO	Stopped listening on port 49187
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623705888405	geckodriver	INFO	Listening on 127.0.0.1:50571
+1623705891503	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile1BE2Np"
+1623705891938	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile1BE2Np\\search.json.mozlz4", (void 0)))
+1623705894870	Marionette	INFO	Listening on port 50579
+1623705895246	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=700444523, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=700444523, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=700444523 line 1 > eval, line 1: unreachable code after return statement
+1623705907272	Marionette	INFO	Stopped listening on port 50579
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623706030814	geckodriver	INFO	Listening on 127.0.0.1:51816
+1623706033918	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile66tASS"
+1623706034367	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile66tASS\\search.json.mozlz4", (void 0)))
+1623706037251	Marionette	INFO	Listening on port 51824
+1623706037643	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=678355065, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=678355065, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=678355065 line 1 > eval, line 1: unreachable code after return statement
+1623706049146	Marionette	INFO	Stopped listening on port 51824
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623706066956	geckodriver	INFO	Listening on 127.0.0.1:51917
+1623706070053	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileEAIt60"
+1623706070475	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileEAIt60\\search.json.mozlz4", (void 0)))
+1623706073315	Marionette	INFO	Listening on port 51925
+1623706073815	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=836904113, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=836904113, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=836904113 line 1 > eval, line 1: unreachable code after return statement
+1623816517382	geckodriver	INFO	Listening on 127.0.0.1:51902
+1623816520428	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilerWLT5U"
+1623816521238	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilerWLT5U\\search.json.mozlz4", (void 0)))
+1623816523936	Marionette	INFO	Listening on port 51910
+1623816524107	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1307784343, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1307784343 line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: https://platform.opentargets.org/static/js/3.ded74e6d.chunk.js, line 2: Error: Network error: NetworkError when attempting to fetch resource.
+1623816591482	Marionette	INFO	Stopped listening on port 51910
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofiledhHbVG"
+1623816567661	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofiledhHbVG\\search.json.mozlz4", (void 0)))
+1623816569704	Marionette	INFO	Listening on port 52033
+1623816570001	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=404088074, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=404088074, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=404088074 line 1 > eval, line 1: unreachable code after return statement
+[Child 2812, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+1623816588750	Marionette	INFO	Stopped listening on port 52033
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623816600447	geckodriver	INFO	Listening on 127.0.0.1:52156
+1623816603518	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileK7JVG0"
+1623816603884	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileK7JVG0\\search.json.mozlz4", (void 0)))
+1623816605760	Marionette	INFO	Listening on port 52164
+1623816606229	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=60606535, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=60606535 line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: https://platform.opentargets.org/static/js/3.ded74e6d.chunk.js, line 2: Error: Network error: NetworkError when attempting to fetch resource.
+1623816631736	Marionette	INFO	Stopped listening on port 52164
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623853212002	geckodriver	INFO	Listening on 127.0.0.1:60013
+1623853215040	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilelL1o2i"
+1623853216032	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilelL1o2i\\search.json.mozlz4", (void 0)))
+1623853220688	Marionette	INFO	Listening on port 60021
+1623853220943	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1181994069, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1181994069, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1181994069 line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1623865904960	geckodriver	INFO	Listening on 127.0.0.1:52813
+1623865907999	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileD3xVRX"
+1623865908581	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileD3xVRX\\search.json.mozlz4", (void 0)))
+1623865911608	Marionette	INFO	Listening on port 63733
+1623865911744	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1072198308, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1072198308, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1072198308 line 1 > eval, line 1: unreachable code after return statement
+1623865924289	Marionette	INFO	Stopped listening on port 63733
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623865962159	geckodriver	INFO	Listening on 127.0.0.1:55535
+1623865965235	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileRZi0zH"
+1623865965731	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileRZi0zH\\search.json.mozlz4", (void 0)))
+1623865968620	Marionette	INFO	Listening on port 55543
+1623865968955	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=475595813, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=475595813, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=475595813 line 1 > eval, line 1: unreachable code after return statement
+[Parent 248, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1623866776183	geckodriver	INFO	Listening on 127.0.0.1:55099
+1623866779234	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileWecUnh"
+1623866779629	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileWecUnh\\search.json.mozlz4", (void 0)))
+1623866782021	Marionette	INFO	Listening on port 55107
+1623866782176	Marionette	INFO	Stopped listening on port 55107
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623867918057	geckodriver	INFO	Listening on 127.0.0.1:56525
+1623867921135	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileA65dti"
+1623867921893	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileA65dti\\search.json.mozlz4", (void 0)))
+1623867924595	Marionette	INFO	Listening on port 56533
+1623867924862	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1695202736, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1695202736, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1695202736 line 1 > eval, line 1: unreachable code after return statement
+1623867935417	Marionette	INFO	Stopped listening on port 56533
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623868193928	geckodriver	INFO	Listening on 127.0.0.1:56504
+1623868196998	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilewONHs9"
+1623868197340	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilewONHs9\\search.json.mozlz4", (void 0)))
+1623868199549	Marionette	INFO	Listening on port 56512
+1623868199709	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1810516297, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1810516297, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1810516297 line 1 > eval, line 1: unreachable code after return statement
+1623868211568	Marionette	INFO	Stopped listening on port 56512
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623868470998	geckodriver	INFO	Listening on 127.0.0.1:54000
+1623868474064	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileilhj9B"
+1623868474416	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileilhj9B\\search.json.mozlz4", (void 0)))
+1623868476619	Marionette	INFO	Listening on port 54008
+1623868476767	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1293998803, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1293998803, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1293998803 line 1 > eval, line 1: unreachable code after return statement
+1623868510786	geckodriver	INFO	Listening on 127.0.0.1:54131
+1623868513820	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile0YLPzR"
+1623868514175	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile0YLPzR\\search.json.mozlz4", (void 0)))
+1623868516041	Marionette	INFO	Listening on port 54139
+1623868516519	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=66936596, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=66936596, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=66936596 line 1 > eval, line 1: unreachable code after return statement
+1623875091279	Marionette	INFO	Stopped listening on port 54139
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofiled5CZH8"
+1623875050868	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofiled5CZH8\\search.json.mozlz4", (void 0)))
+1623875052916	Marionette	INFO	Listening on port 53979
+1623875053184	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1133868466, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1133868466, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1133868466 line 1 > eval, line 1: unreachable code after return statement
+1623875065888	Marionette	INFO	Stopped listening on port 53979
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623875093911	geckodriver	INFO	Listening on 127.0.0.1:54092
+1623875096968	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilevuonm5"
+1623875097307	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilevuonm5\\search.json.mozlz4", (void 0)))
+1623875099063	Marionette	INFO	Listening on port 54101
+1623875099158	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1099220952, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1099220952, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1099220952 line 1 > eval, line 1: unreachable code after return statement
+1623878538721	Marionette	INFO	Stopped listening on port 54101
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623879077544	geckodriver	INFO	Listening on 127.0.0.1:55771
+1623879080597	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile0AlrBh"
+1623879080973	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile0AlrBh\\search.json.mozlz4", (void 0)))
+1623879083090	Marionette	INFO	Listening on port 55779
+1623879083300	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=17546233, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=17546233, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=17546233 line 1 > eval, line 1: unreachable code after return statement
+1623879094372	Marionette	INFO	Stopped listening on port 55779
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623879130296	geckodriver	INFO	Listening on 127.0.0.1:57022
+1623879133368	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile3XBetq"
+1623879133711	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile3XBetq\\search.json.mozlz4", (void 0)))
+1623879136037	Marionette	INFO	Listening on port 57030
+1623879136075	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1270453739, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1270453739, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1270453739 line 1 > eval, line 1: unreachable code after return statement
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A0008,name=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+1623879142406	Marionette	INFO	Stopped listening on port 57030
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623879196987	geckodriver	INFO	Listening on 127.0.0.1:57125
+1623879200063	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileRo9XDH"
+1623879200417	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileRo9XDH\\search.json.mozlz4", (void 0)))
+1623879202342	Marionette	INFO	Listening on port 57133
+1623879202748	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=406801820, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=406801820, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=406801820 line 1 > eval, line 1: unreachable code after return statement
+1623880881678	geckodriver	INFO	Listening on 127.0.0.1:55531
+1623880884707	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileYkU2a6"
+1623880885063	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileYkU2a6\\search.json.mozlz4", (void 0)))
+1623880887042	Marionette	INFO	Listening on port 55539
+1623880887391	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1806487758, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1806487758, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1806487758 line 1 > eval, line 1: unreachable code after return statement
+1623880897493	Marionette	INFO	Stopped listening on port 55539
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623881038238	geckodriver	INFO	Listening on 127.0.0.1:51924
+1623881041293	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilesa6Tsc"
+1623881041653	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilesa6Tsc\\search.json.mozlz4", (void 0)))
+1623881043823	Marionette	INFO	Listening on port 51932
+1623881043998	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=529113639, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=529113639, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=529113639 line 1 > eval, line 1: unreachable code after return statement
+1623881054904	Marionette	INFO	Stopped listening on port 51932
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623881099687	geckodriver	INFO	Listening on 127.0.0.1:59901
+1623881102771	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile3C6hNJ"
+1623881103103	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile3C6hNJ\\search.json.mozlz4", (void 0)))
+1623881105180	Marionette	INFO	Listening on port 59910
+1623881105443	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1452027570, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1452027570, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1452027570 line 1 > eval, line 1: unreachable code after return statement
+1623881115730	Marionette	INFO	Stopped listening on port 59910
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623881294299	geckodriver	INFO	Listening on 127.0.0.1:55804
+1623881297336	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileQrbUUK"
+1623881297666	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileQrbUUK\\search.json.mozlz4", (void 0)))
+1623881299848	Marionette	INFO	Listening on port 55812
+1623881300050	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1286397612, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1286397612 line 1 > eval, line 1: unreachable code after return statement
+1623881310076	Marionette	INFO	Stopped listening on port 55812
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623881329751	geckodriver	INFO	Listening on 127.0.0.1:55924
+1623881332850	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile44fvYR"
+1623881333231	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile44fvYR\\search.json.mozlz4", (void 0)))
+1623881335331	Marionette	INFO	Listening on port 55932
+1623881335536	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1128804370, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1128804370, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1128804370 line 1 > eval, line 1: unreachable code after return statement
+1623881345662	Marionette	INFO	Stopped listening on port 55932
+[Parent 17104, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623881358116	geckodriver	INFO	Listening on 127.0.0.1:65074
+1623881361187	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileH5SpNS"
+1623881361555	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileH5SpNS\\search.json.mozlz4", (void 0)))
+1623881363546	Marionette	INFO	Listening on port 65082
+1623881363875	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2123523397, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2123523397 line 1 > eval, line 1: unreachable code after return statement
+1623881374437	Marionette	INFO	Stopped listening on port 65082
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624397801771	geckodriver	INFO	Listening on 127.0.0.1:51957
+1624397804803	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile7T13Wq"
+1624397805714	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile7T13Wq\\search.json.mozlz4", (void 0)))
+1624397809102	Marionette	INFO	Listening on port 59080
+1624397809153	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1638069228, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1638069228, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1638069228, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1638069228 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1638069228 line 1 > eval, line 1: unreachable code after return statement
+1624411250349	Marionette	INFO	Stopped listening on port 59080
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilea9u1be"
+1624410654993	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilea9u1be\\search.json.mozlz4", (void 0)))
+1624410658472	Marionette	INFO	Listening on port 50989
+1624410658726	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1577827033, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1577827033, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1577827033, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1577827033 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1577827033 line 1 > eval, line 1: unreachable code after return statement
+1624410669779	Marionette	INFO	Stopped listening on port 50989
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624410709111	geckodriver	INFO	Listening on 127.0.0.1:51105
+1624410712135	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilefS1gZw"
+1624410712652	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilefS1gZw\\search.json.mozlz4", (void 0)))
+1624410715296	Marionette	INFO	Listening on port 51113
+1624410715378	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1768366875, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1768366875, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1768366875, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1768366875 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1768366875 line 1 > eval, line 1: unreachable code after return statement
+1624410726897	Marionette	INFO	Stopped listening on port 51113
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624410788491	geckodriver	INFO	Listening on 127.0.0.1:51228
+1624410791537	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileFuPyEB"
+1624410791953	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileFuPyEB\\search.json.mozlz4", (void 0)))
+1624410794540	Marionette	INFO	Listening on port 51236
+1624410794740	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1810142181, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1810142181, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1810142181, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1810142181 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1810142181 line 1 > eval, line 1: unreachable code after return statement
+1624410805997	Marionette	INFO	Stopped listening on port 51236
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624410917435	geckodriver	INFO	Listening on 127.0.0.1:51357
+1624410920483	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilexeDqC3"
+1624410921047	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilexeDqC3\\search.json.mozlz4", (void 0)))
+1624410923695	Marionette	INFO	Listening on port 51365
+1624410924188	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=212976804, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=212976804, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=212976804, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=212976804 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=212976804 line 1 > eval, line 1: unreachable code after return statement
+1624410935373	Marionette	INFO	Stopped listening on port 51365
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624410974010	geckodriver	INFO	Listening on 127.0.0.1:51475
+1624410977103	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileQKmrkR"
+1624410977541	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileQKmrkR\\search.json.mozlz4", (void 0)))
+1624410980290	Marionette	INFO	Listening on port 51483
+1624410980335	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=866839463, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=866839463, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=866839463, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=866839463 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=866839463 line 1 > eval, line 1: unreachable code after return statement
+1624411252463	Marionette	INFO	Stopped listening on port 51483
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624411296459	geckodriver	INFO	Listening on 127.0.0.1:51756
+1624411299523	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileayJNpv"
+1624411300030	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileayJNpv\\search.json.mozlz4", (void 0)))
+1624411303157	Marionette	INFO	Listening on port 51764
+1624411303204	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=430547486, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=430547486, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=430547486, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=430547486 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=430547486 line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: https://platform.opentargets.org/static/js/3.ded74e6d.chunk.js, line 2: Error: Network error: NetworkError when attempting to fetch resource.
+1624412954653	Marionette	INFO	Stopped listening on port 51764
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileph3ZBw"
+1624412836212	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileph3ZBw\\search.json.mozlz4", (void 0)))
+1624412838543	Marionette	INFO	Listening on port 55201
+1624412838594	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2053521959, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2053521959, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2053521959, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2053521959 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2053521959 line 1 > eval, line 1: unreachable code after return statement
+1624412859288	Marionette	INFO	Stopped listening on port 55201
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624412861820	geckodriver	INFO	Listening on 127.0.0.1:59423
+1624412864885	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileenxoTu"
+1624412865203	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileenxoTu\\search.json.mozlz4", (void 0)))
+1624412867251	Marionette	INFO	Listening on port 59431
+1624412867542	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=565049654, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=565049654, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=565049654, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=565049654 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=565049654 line 1 > eval, line 1: unreachable code after return statement
+1624412950349	Marionette	INFO	Stopped listening on port 59431
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileVPfvsK"
+1624412928915	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileVPfvsK\\search.json.mozlz4", (void 0)))
+1624412931027	Marionette	INFO	Listening on port 56916
+1624412931264	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=145967759, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=145967759, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=145967759, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=145967759 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=145967759 line 1 > eval, line 1: unreachable code after return statement
+1624412944387	Marionette	INFO	Stopped listening on port 56916
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624412979791	geckodriver	INFO	Listening on 127.0.0.1:52734
+1624412982852	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileCH2fSf"
+1624412983230	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileCH2fSf\\search.json.mozlz4", (void 0)))
+1624412985175	Marionette	INFO	Listening on port 52742
+1624412985553	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1983654021, line 1: unreachable code after return statement
+1624412999834	Marionette	INFO	Stopped listening on port 52742
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624413064818	geckodriver	INFO	Listening on 127.0.0.1:52855
+1624413067909	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilecI2qkc"
+1624413068254	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilecI2qkc\\search.json.mozlz4", (void 0)))
+1624413070759	Marionette	INFO	Listening on port 58042
+1624413071103	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1547632436, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1547632436, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1547632436 line 1 > eval, line 1: unreachable code after return statement
+1624413083525	Marionette	INFO	Stopped listening on port 58042
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624413109253	geckodriver	INFO	Listening on 127.0.0.1:64188
+1624413112311	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile06zefi"
+1624413112658	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile06zefi\\search.json.mozlz4", (void 0)))
+1624413114969	Marionette	INFO	Listening on port 64196
+1624413115008	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=184688960, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=184688960 line 1 > eval, line 1: unreachable code after return statement
+1624414271273	geckodriver	INFO	Listening on 127.0.0.1:61118
+1624414274357	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile4NYhCC"
+1624414274710	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofile4NYhCC\\search.json.mozlz4", (void 0)))
+1624414276576	Marionette	INFO	Listening on port 61126
+1624414277059	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1931189647, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1931189647, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1931189647, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1931189647 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1931189647 line 1 > eval, line 1: unreachable code after return statement
+1624414288249	Marionette	INFO	Stopped listening on port 61126
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624414303220	geckodriver	INFO	Listening on 127.0.0.1:61240
+1624414306255	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileNHVGmO"
+1624414306595	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileNHVGmO\\search.json.mozlz4", (void 0)))
+1624414308526	Marionette	INFO	Listening on port 61248
+1624414308931	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=419774337, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=419774337, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=419774337, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=419774337 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=419774337 line 1 > eval, line 1: unreachable code after return statement
+1624414319478	Marionette	INFO	Stopped listening on port 61248
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624414367710	geckodriver	INFO	Listening on 127.0.0.1:61359
+1624414370817	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilehx5iZM"
+1624414371178	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilehx5iZM\\search.json.mozlz4", (void 0)))
+1624414373330	Marionette	INFO	Listening on port 61367
+1624414373505	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1071482526, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1071482526, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1071482526 line 1 > eval, line 1: unreachable code after return statement
+1624414383950	Marionette	INFO	Stopped listening on port 61367
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624414461106	geckodriver	INFO	Listening on 127.0.0.1:61481
+1624414464171	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileoHuI3u"
+1624414464533	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileoHuI3u\\search.json.mozlz4", (void 0)))
+1624414466547	Marionette	INFO	Listening on port 61489
+1624414466862	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=939674247, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=939674247, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=939674247, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=939674247 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=939674247 line 1 > eval, line 1: unreachable code after return statement
+1624414480607	Marionette	INFO	Stopped listening on port 61489
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624414505350	geckodriver	INFO	Listening on 127.0.0.1:61601
+1624414508361	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileRT5RC9"
+1624414508722	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileRT5RC9\\search.json.mozlz4", (void 0)))
+1624414510925	Marionette	INFO	Listening on port 61609
+1624414511072	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=52475698, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=52475698, line 1: unreachable code after return statement
+JavaScript warning: https://www.genecards.org/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=52475698 line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1624416315290	Marionette	INFO	Stopped listening on port 61609
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624459621035	geckodriver	INFO	Listening on 127.0.0.1:57351
+1624459624090	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileJk4HKJ"
+1624459625096	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileJk4HKJ\\search.json.mozlz4", (void 0)))
+1624459628301	Marionette	INFO	Listening on port 57360
+1624459628435	Marionette	WARN	TLS certificate errors will be ignored for this session
+1624459856347	Marionette	INFO	Stopped listening on port 57360
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileHveuPX"
+1624459687172	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileHveuPX\\search.json.mozlz4", (void 0)))
+1624459689884	Marionette	INFO	Listening on port 57447
+1624459690004	Marionette	WARN	TLS certificate errors will be ignored for this session
+1624459743816	geckodriver	INFO	Listening on 127.0.0.1:57520
+1624459746893	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileIaqBlc"
+1624459747258	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileIaqBlc\\search.json.mozlz4", (void 0)))
+1624459749503	Marionette	INFO	Listening on port 56768
+1624459749585	Marionette	WARN	TLS certificate errors will be ignored for this session
+1624459855344	Marionette	INFO	Stopped listening on port 56768
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilejlKyGf"
+1624459797200	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofilejlKyGf\\search.json.mozlz4", (void 0)))
+1624459799523	Marionette	INFO	Listening on port 56847
+1624459800027	Marionette	WARN	TLS certificate errors will be ignored for this session
+1624459854288	Marionette	INFO	Stopped listening on port 56847
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
