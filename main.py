@@ -1,3 +1,5 @@
+import Parsers.ParsePatent
+import Parsers.ParsePatentV_2
 import TargetInformation
 from CompanyTargetsDictionary import PatentTargets
 
@@ -5,3 +7,4 @@ from CompanyTargetsDictionary import PatentTargets
 if __name__ == '__main__':
     #print(TargetInformation.targetinformation())
     print(PatentTargets.testparser())
+    #print(Parsers.ParsePatentV_2.newParser())

@@ -105,5 +105,6 @@ def aliasesfromfile():
         x = ws.row_values(dog)
         x[:] = [y for y in x if y]
         x = x[1:]
+        x = str(x)
         aliases.append(x)
     return aliases

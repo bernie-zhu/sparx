@@ -1,33 +1,85 @@
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-from selenium import webdriver
-import time
-
-
 def parse(driver, l, target_frequency):
     results = []
     count = [0] * len(l)
 
+    # claims = driver.find_elements_by_class_name("claims")
+
+    # dog = ""
+
+    # for x in claims:
+    #    dog = dog + x.text + "\n"
+
+    # print(dog)
+    # claim = dog
+
     # TITLE
-    titleStr = driver.find_element_by_id("title").text
+    # titleStr = driver.find_element_by_id("title").text
+    titleStr = driver.title.split(" - ")[1].strip()
 
     # print(titleStr)
-
+    ## SWITCH CASE
     for x in l:
         for y in x:
-            if y in titleStr:
-                count[l.index(x)] += titleStr.count(y)
-                results.append(x[len(x) - 1])
-                break
+            # y=str(y).lower()
+            if len(str(y)) >= 3:
+                # print("entered")
+                if " " + str(y) + " " in titleStr:
+                    count[l.index(x)] += titleStr.count(" " + str(y) + " ")
+                    results.append(x[0])
+                    break
+                if " " + str(y) + "." in titleStr:
+                    count[l.index(x)] += titleStr.count(" " + str(y) + ".")
+                    results.append(x[0])
+                    break
+                if " " + str(y) + "," in titleStr:
+                    count[l.index(x)] += titleStr.count(" " + str(y) + ",")
+                    results.append(x[0])
+                    break
+                if " " + str(y) + "'" in titleStr:
+                    count[l.index(x)] += titleStr.count(" " + str(y) + "'")
+                    results.append(x[0])
+                    break
+                if " " + str(y) + "/" in titleStr:
+                    count[l.index(x)] += titleStr.count(" " + str(y) + "/")
+                    results.append(x[0])
+                    break
+                if "/" + str(y) + " " in titleStr:
+                    count[l.index(x)] += titleStr.count("/" + str(y) + " ")
+                    results.append(x[0])
+                    break
+                if " " + str(y) + ":" in titleStr:
+                    count[l.index(x)] += titleStr.count(" " + str(y) + ":")
+                    results.append(x[0])
+                    break
 
     # ABSTRACT
+    # abstractStr = driver.find_element_by_id("abstract").text
     abstractStr = driver.find_element_by_id("abstract").text
 
+    if not abstractStr:
+        abstractStr = driver.find_element_by_tag_name("patent-text").text
     # print(abstractStr)
 
     for x in l:
+        # y=str(y).lower()
         for y in x:
-            if y in abstractStr:
-                count[l.index(x)] += abstractStr.count(y)
+            y = str(y).lower()
+            if len(str(y)) >= 3:
+                # print("entered")
+                if " " + str(y) + " " in abstractStr:
+                    count[l.index(x)] += abstractStr.count(" " + str(y) + " ")
+                elif " " + str(y) + "." in abstractStr:
+                    count[l.index(x)] += abstractStr.count(" " + str(y) + ".")
+                elif " " + str(y) + "," in abstractStr:
+                    count[l.index(x)] += abstractStr.count(" " + str(y) + ",")
+                elif " " + str(y) + "'" in abstractStr:
+                    count[l.index(x)] += abstractStr.count(" " + str(y) + "'")
+                elif " " + str(y) + "/" in abstractStr:
+                    count[l.index(x)] += abstractStr.count(" " + str(y) + "/")
+                elif "/" + str(y) + " " in abstractStr:
+                    count[l.index(x)] += abstractStr.count("/" + str(y) + " ")
+                elif " " + str(y) + ":" in abstractStr:
+                    count[l.index(x)] += abstractStr.count(" " + str(y) + ":")
 
     # CLAIMS
     claims = driver.find_elements_by_class_name("claims")
@@ -44,8 +96,23 @@ def parse(driver, l, target_frequency):
 
     for x in l:
         for y in x:
-            if y in claimStr:
-                count[l.index(x)] += claimStr.count(y)
+            # y=str(y).lower()
+            if len(str(y)) >= 3:
+                # print("entered")
+                if " " + str(y) + " " in claimStr:
+                    count[l.index(x)] += claimStr.count(" " + str(y) + " ")
+                elif " " + str(y) + "." in claimStr:
+                    count[l.index(x)] += claimStr.count(" " + str(y) + ".")
+                elif " " + str(y) + "," in claimStr:
+                    count[l.index(x)] += claimStr.count(" " + str(y) + ",")
+                elif " " + str(y) + "'" in claimStr:
+                    count[l.index(x)] += claimStr.count(" " + str(y) + "'")
+                elif " " + str(y) + "/" in claimStr:
+                    count[l.index(x)] += claimStr.count(" " + str(y) + "/")
+                elif "/" + str(y) + " " in claimStr:
+                    count[l.index(x)] += claimStr.count("/" + str(y) + " ")
+                elif " " + str(y) + ":" in claimStr:
+                    count[l.index(x)] += claimStr.count(" " + str(y) + ":")
 
     # ADD TO RESULTS
     # temp = count
@@ -60,11 +127,13 @@ def parse(driver, l, target_frequency):
     # for y in l:
     #    if count[l.index(y)]>=3 and l[l.index(y)][len(l[l.index(y)])-1] not in results:
     #        results.append(y[len(y)-1])
-
+    print(count)
     r = sorted(zip(count, l), reverse=True)[:3]
     for x in r:
         if x[0] >= target_frequency:
-            results.append(x[1][len(x[1]) - 1])
+            results.append(x[1][0])
+
+    # print(r)
 
     # c = 0
     # if len(results)==0:
