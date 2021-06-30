@@ -44,7 +44,7 @@ names = ["Roche",
          "Seattle+Genetics",
          "Celgene",
          ]
-namesTest = ["Seattle+Genetics",
+namesTest = ["Roche",
 
          ]
 companies = dict.fromkeys(namesTest)
