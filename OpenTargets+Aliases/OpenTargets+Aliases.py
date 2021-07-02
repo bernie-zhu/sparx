@@ -89,11 +89,12 @@ def genecards(osugame): #osugame input will be a gene name
                         numbers = numbers + ", " + fish.text
                 numbers = numbers[2:]
                 numbers = " (" + numbers + ")"
+            
             #print(cat.text)
             #print(numbers)
             if numbers!= "" and numbers!=" ()":
                 #print(cat.text.split(numbers)[0])
-                mrekk.append(cat.text.split(numbers)[0])
+                mrekk.append(str(cat.text[:-len(numbers)]))
 
 
             if "Ensembl" in cat.text: 
@@ -112,7 +113,6 @@ def genecards(osugame): #osugame input will be a gene name
     else:
         
         return "","","", driver, "", alternatesearch, newtarget
-    
 
 ############################################################################################
 
@@ -139,7 +139,7 @@ def getopentargets(genename): #genename will be a gene name
             opentargetslink = link
         
         driver.get(opentargetslink)
-        time.sleep(5)
+        time.sleep(2)
 
         results = driver.find_elements_by_class_name("MuiTableRow-root")
         results.pop(0)
@@ -174,7 +174,7 @@ def getopentargets(genename): #genename will be a gene name
 
 #getopentargets test
 
-diseaseconditions, names, genename, link1, link2, closestpossibletarget = getopentargets("hoxa4") #change input string to a gene name
+diseaseconditions, names, genename, link1, link2, closestpossibletarget = getopentargets("SDR42E2") #change input string to a gene name
 print(closestpossibletarget)
     
 print(genename + " is also known as:")
@@ -196,7 +196,7 @@ print("Source: " + link2)
 
 #genecards test
 
-ensembl,names,genename, driver, link1, alternatesearch, closestpossibletarget = genecards("grep1") #change input string to a gene name
+ensembl,names,genename, driver, link1, alternatesearch, closestpossibletarget = genecards("hepn1") #change input string to a gene name
 print(closestpossibletarget)
     
 print(genename + " is also known as:")
@@ -210,6 +210,18 @@ print(ensembl)
 
 
 driver.close()
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
