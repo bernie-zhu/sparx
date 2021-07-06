@@ -1,4 +1,4 @@
-def parse(driver, alias_list, genes, target_frequency):
+def parse(driver, alias_list, genes, target_frequency, num_claims):
     results = []
     count = [0] * len(alias_list)
 
@@ -13,9 +13,21 @@ def parse(driver, alias_list, genes, target_frequency):
                 # print("entered")
                 if str(cur) in titleStr:
                     countTitle = (titleStr.count(" " + str(cur) + " ") + titleStr.count(" " + str(cur) + ".") + \
+                                  titleStr.count(" " + str(cur) + "-") + titleStr.count("-" + str(cur) + ".") + \
                                   titleStr.count(" " + str(cur) + ",") + titleStr.count(" " + str(cur) + "'") + \
                                   titleStr.count(" " + str(cur) + "/") + titleStr.count("/" + str(cur) + " ") + \
                                   titleStr.count(" " + str(cur) + ":") + titleStr.count("-" + str(cur) + " "))
+                    if countTitle != 0:
+                        results.append(aliases[0])
+                        count[alias_list.index(aliases)] += countTitle
+                        break
+                ## MAYBE ADD LENGTH RESTRICTION, len(str(cur))>5 and str(cur).lower() in titleStr
+                elif str(cur).lower() in titleStr:
+                    lower = str(cur).lower()
+                    countTitle = (titleStr.count(" " + lower + " ") + titleStr.count(" " + lower + ".") + \
+                                  titleStr.count(" " + lower + ",") + titleStr.count(" " + lower + "'") + \
+                                  titleStr.count(" " + lower + "/") + titleStr.count("/" + lower + " ") + \
+                                  titleStr.count(" " + lower + ":") + titleStr.count("-" + lower + " "))
                     if countTitle != 0:
                         results.append(aliases[0])
                         count[alias_list.index(aliases)] += countTitle
@@ -43,17 +55,24 @@ def parse(driver, alias_list, genes, target_frequency):
                                 abstractStr.count(" " + str(cur) + ":") + abstractStr.count("-" + str(cur) + " "))
                     count[alias_list.index(aliases)] += countAbstract
                     # print(str(temp) + " gene: "+ str(y))
+                elif str(cur).lower() in abstractStr:
+                    lower = str(cur).lower()
+                    countAbstract = 3 * (abstractStr.count(" " + lower + " ") + abstractStr.count(" " + lower + ".") + \
+                                         abstractStr.count(" " + lower + ",") + abstractStr.count(" " + lower + "'") + \
+                                         abstractStr.count(" " + lower + "/") + abstractStr.count("/" + lower + " ") + \
+                                         abstractStr.count(" " + lower + ":") + abstractStr.count("-" + lower + " "))
+                    count[alias_list.index(aliases)] += countAbstract
 
     # CLAIMS
     claimList = []
 
     claims = driver.find_elements_by_class_name("claim-text")
-    num_claims = 0
+    count_claims = 0
     for x in claims:
-        if num_claims >= 10:
+        if count_claims >= num_claims:
             break
         claimList.append(x.text + "\n")
-        num_claims += 1
+        count_claims += 1
 
     # print(claimList)
     claimStr = ""
@@ -74,6 +93,16 @@ def parse(driver, alias_list, genes, target_frequency):
                         "/" + str(cur) + " ") + \
                                                         claimStr.count(" " + str(cur) + ":") + claimStr.count(
                         "-" + str(cur) + " ")
+                elif str(cur).lower() in claimStr:
+                    lower = str(cur).lower()
+                    count[alias_list.index(aliases)] += claimStr.count(" " + lower + " ") + claimStr.count(
+                        " " + lower + ".") + \
+                                                        claimStr.count(" " + lower + ",") + claimStr.count(
+                        " " + lower + "'") + \
+                                                        claimStr.count(" " + lower + "/") + claimStr.count(
+                        "/" + lower + " ") + \
+                                                        claimStr.count(" " + lower + ":") + claimStr.count(
+                        "-" + lower + " ")
 
     sort = sorted(zip(count, genes), reverse=True)
     count = 0
@@ -95,5 +124,6 @@ def parse(driver, alias_list, genes, target_frequency):
         elif x[0] > 0 and len(results) == 0:
             results.append(x[1])
             break
+
 
     return results

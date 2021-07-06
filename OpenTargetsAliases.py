@@ -19,9 +19,9 @@ class OpenTargetAndAliases:
 
     def checkgeneexists(self, cookiezi, driver):
 
-        #driver = webdriver.Firefox()
+        # driver = webdriver.Firefox()
         # if not working (not in env variables), paste in executable path to geckodriver.exe file
-        # executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe'
+        # executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe')
 
         replace = "https://www.genecards.org/cgi-bin/carddisp.pl?gene=" + cookiezi
         driver.get(replace)
@@ -50,14 +50,15 @@ class OpenTargetAndAliases:
 
     ########################################################################################
 
-    def genecards(self, osugame, driver):  # osugame input will be a gene name
+    def genecards(self, osugame, woof):  # osugame input will be a gene name
         # Test links:
 
         # driver = webdriver.Firefox(executable_path=r'C:\Users\Kevin\geckodriver-v0.29.1-win64\geckodriver.exe')
 
         source = "https://www.genecards.org/cgi-bin/carddisp.pl?gene=" + osugame
 
-        source, driver, alternatesearch, newtarget = self.checkgeneexists(osugame, driver)
+        source, driver, alternatesearch, newtarget = self.checkgeneexists(osugame, woof)
+
         n = 0
 
         if alternatesearch != 2:
@@ -91,7 +92,7 @@ class OpenTargetAndAliases:
                 # print(numbers)
                 if numbers != "" and numbers != " ()":
                     # print(cat.text.split(numbers)[0])
-                    mrekk.append(cat.text.split(numbers)[0])
+                    mrekk.append(str(cat.text[:-len(numbers)]))
 
                 if "Ensembl" in cat.text:
                     ensembl = cat.text
@@ -112,9 +113,9 @@ class OpenTargetAndAliases:
 
     ############################################################################################
 
-    def getopentargets(self, genename, driver):  # genename will be a gene name
+    def getopentargets(self, genename, drivername):  # genename will be a gene name
 
-        ensemblname, aliases, name, nd, genecardslink, searchno, target2 = self.genecards(genename, driver)
+        ensemblname, aliases, name, nd, genecardslink, searchno, target2 = self.genecards(genename, drivername)
         link = ""
         woof = 0
         if searchno != 2:
@@ -133,11 +134,17 @@ class OpenTargetAndAliases:
             else:
                 opentargetslink = link
 
+            if "ENSG00000105810" in link and genename != "CDK6":
+                return [], aliases, name, genecardslink, "OpenTargets gene not found!", target2, nd
+
             driver.get(opentargetslink)
-            time.sleep(5)
+            time.sleep(4)
 
             results = driver.find_elements_by_class_name("MuiTableRow-root")
-            results.pop(0)
+            if not results:
+                time.sleep(2)
+            elif "Name" in results[0].text:
+                results.pop(0)
 
             for result in results:
                 product_name = result.find_element_by_tag_name('span')
@@ -153,10 +160,9 @@ class OpenTargetAndAliases:
             if len(conditions) > 10:
                 conditions = conditions[:10]
 
-            #driver.close()
+            return conditions, aliases, name, genecardslink, opentargetslink, search, nd
 
-            return conditions, aliases, name, genecardslink, opentargetslink, search
         else:
 
-            #nd.close()
-            return "DNE", "DNE", "DNE", "DNE", "DNE", target2
+            # nd.close()
+            return [], [], str(genename) + "?", "DNE", "DNE", target2, nd

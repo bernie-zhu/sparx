@@ -28,7 +28,7 @@ class PatentTargets:
     def __init__(self, company):
         self.company = company
 
-    def targetsforpatents(self, frequency, genes, aliases, pages, diseases):
+    def targetsforpatents(self, frequency, genes, aliases, pages, diseases, claimNumber):
         driver = webdriver.Firefox(
             executable_path=r"C:\Python\Python38\geckodriver.exe")  # make sure this exists somewhere in a local, varies from user to user, and copy the path here
 
@@ -56,7 +56,8 @@ class PatentTargets:
                 num = data[0]['result'][i]['patent']['publication_number']
                 driver.get(main_url + "patent/" + num + "/en" + params)
                 time.sleep(3)
-                populartargets.append(Parsers.ParsePatent.parse(driver, aliases, genes, frequency))
+                populartargets.append(Parsers.ParsePatent.parse(driver, aliases, genes, frequency, claimNumber))
+                print(num + ":" + populartargets)
 
             page += 1
 
@@ -69,13 +70,13 @@ class PatentTargets:
         finishedList = []
 
         returnList = []
-        #for target in sor:
-            #target = list(target)
-            #for disease in diseases:
-                #if target[0] == disease[0]:
-                    #returnList.append(target[0])
-                    #returnList.append(disease[1:])
-                    #break
+        for target in sor:
+            target = list(target)
+            for disease in diseases:
+                if target[0] == disease[0]:
+                    returnList.append(target[0])
+                    returnList.append(disease[1:])
+                    break
 
         return sor
 
@@ -83,6 +84,7 @@ class PatentTargets:
 def targetintodict():
     targetfrequency = int(input("Enter Target Limit: "))
     pages = int(input("How many pages of patents do you want to search through: "))
+    claim = int(input("How many claims do you want to search through:"))
 
     allCompanies = companyNames.companies
     aliases = newaliasesfromfile()
@@ -91,7 +93,7 @@ def targetintodict():
 
     for company, links in allCompanies.items():
         targets = PatentTargets(company)
-        allCompanies[company] = targets.targetsforpatents(targetfrequency, genes, aliases, pages, diseases)
+        allCompanies[company] = targets.targetsforpatents(targetfrequency, genes, aliases, pages, diseases, claim)
 
     return allCompanies
 
@@ -120,21 +122,27 @@ def testmanual():
 
     while i < len(testFile.manual_patents):
         targets = []
+        patentsubstring = testFile.manual_patents[i][0:6]
+        patentendstring = testFile.manual_patents[i][6:]
 
-        driver.get("https://patents.google.com/patent/" + testFile.manual_patents[i])
+        if (len(testFile.manual_patents[i]) < 14):
+            driver.get("https://patents.google.com/patent/" + testFile.manual_patents[i])
+        else:
+            driver.get("https://patents.google.com/patent/" + patentsubstring + "0" + patentendstring)
+
         time.sleep(3)
 
         aliases = newaliasesfromfile()
         genes = genesfromfile()
         diseases = diseasesfromfile()
 
-        targets.append(Parsers.ParsePatent.parse(driver, aliases, genes, 2))
+        targets.append(Parsers.ParsePatent.parse(driver, aliases, genes, 2, 10))
         flattentargets = [val for sublist in targets for val in sublist]
         targetdict = dict(Counter(flattentargets))
         sor = sorted(targetdict.items(), key=lambda x: x[1], reverse=True)
         sor = sor[:3]
-        i = i + 1
         print(str(testFile.manual_patents[i]) + " - " + str(sor))
+        i = i + 1
 
     driver.close
     return sor
