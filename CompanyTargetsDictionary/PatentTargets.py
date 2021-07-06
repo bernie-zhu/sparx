@@ -4,6 +4,7 @@ import requests
 from selenium.webdriver.firefox import webdriver
 import Parsers.ParsePatent
 import TargetInformation
+import testFile
 from CompanyTargetsDictionary import companyNames
 import gc
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
@@ -60,15 +61,23 @@ class PatentTargets:
             page += 1
 
         driver.close()
+
         flattentargets = [val for sublist in populartargets for val in sublist]
         targetdict = dict(Counter(flattentargets))
-        sorted(targetdict.items(), key=lambda x: x[1], reverse=True)
-        dictLengthThree = list(targetdict.items())[:3]
+        sor = sorted(targetdict.items(), key=lambda x: x[1], reverse=True)
+        sor = list(sor[:3])
+        finishedList = []
 
-        for target, diseases in dictLengthThree.items():
-            dictLengthThree[target] = diseasesFromTarget(target, diseases)
+        returnList = []
+        #for target in sor:
+            #target = list(target)
+            #for disease in diseases:
+                #if target[0] == disease[0]:
+                    #returnList.append(target[0])
+                    #returnList.append(disease[1:])
+                    #break
 
-        return dictLengthThree
+        return sor
 
 
 def targetintodict():
@@ -91,13 +100,44 @@ def testparser():
     targets = []
     driver = webdriver.Firefox(
         executable_path=r"C:\Python\Python38\geckodriver.exe")  # make sure this exists somewhere in a local, varies from user to user, and copy the path here
-    driver.get("https://patents.google.com/patent/US20080234138A1/en?q=tp53&oq=tp53")
+    driver.get("https://patents.google.com/patent/US2018222985A1")
     time.sleep(3)
     aliases = newaliasesfromfile()
     genes = genesfromfile()
+    diseases = diseasesfromfile()
     targets.append(Parsers.ParsePatent.parse(driver, aliases, genes, 2))
     driver.close
-    return targets
+    flattentargets = [val for sublist in targets for val in sublist]
+    targetdict = dict(Counter(flattentargets))
+    sor = sorted(targetdict.items(), key=lambda x: x[1], reverse=True)
+    sor = sor[:3]
+    return sor
+
+def testmanual():
+    i = 0
+    driver = webdriver.Firefox(
+        executable_path=r"C:\Python\Python38\geckodriver.exe")  # make sure this exists somewhere in a local, varies from user to user, and copy the path here
+
+    while i < len(testFile.manual_patents):
+        targets = []
+
+        driver.get("https://patents.google.com/patent/" + testFile.manual_patents[i])
+        time.sleep(3)
+
+        aliases = newaliasesfromfile()
+        genes = genesfromfile()
+        diseases = diseasesfromfile()
+
+        targets.append(Parsers.ParsePatent.parse(driver, aliases, genes, 2))
+        flattentargets = [val for sublist in targets for val in sublist]
+        targetdict = dict(Counter(flattentargets))
+        sor = sorted(targetdict.items(), key=lambda x: x[1], reverse=True)
+        sor = sor[:3]
+        i = i + 1
+        print(str(testFile.manual_patents[i]) + " - " + str(sor))
+
+    driver.close
+    return sor
 
 
 def aliasesfromfile():
@@ -139,9 +179,18 @@ def genesfromfile():
 
 
 def diseasesfromfile():
-    # get diseases from kevin's code
-
-    return diseases
+    pepega = pd.read_excel(r"C:\Users\zaids\PycharmProjects\sparx\CompanyTargetsDictionary\Gene_Conditions_All.xls")
+    # print(pepega["Unnamed: 0"].values[0])
+    # print(pepega.values[0])
+    poogers = []
+    for dog in range(len(pepega.values)):
+        peepo = []
+        for cow in range(len(pepega.values[dog]) - 1):
+            if pd.isnull(pepega.values[dog][cow]):
+                break
+            peepo.append(pepega.values[dog][cow])
+        poogers.append(peepo)
+    return poogers
 
 
 def diseasesFromTarget(foundTarget, diseases):

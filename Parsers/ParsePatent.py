@@ -1,120 +1,99 @@
-def parse(driver, l, genes, target_frequency):
+def parse(driver, alias_list, genes, target_frequency):
     results = []
-    count = [0] * len(l)
+    count = [0] * len(alias_list)
 
+    # TITLE
+    # titleStr = driver.find_element_by_id("title").text
     titleStr = driver.title.split(" - ")[1].strip()
 
     # print(titleStr)
-    ## SWITCH CASE
-    for x in l:
-        for y in x:
-            # y=str(y).lower()
-            if len(str(y)) >= 3:
+    for aliases in alias_list:
+        for cur in aliases:
+            if len(str(cur)) >= 3:
                 # print("entered")
-                if " " + str(y) + " " in titleStr:
-                    count[l.index(x)] += titleStr.count(" " + str(y) + " ")
-                    results.append(x[0])
-                    break
-                if " " + str(y) + "." in titleStr:
-                    count[l.index(x)] += titleStr.count(" " + str(y) + ".")
-                    results.append(x[0])
-                    break
-                if " " + str(y) + "," in titleStr:
-                    count[l.index(x)] += titleStr.count(" " + str(y) + ",")
-                    results.append(x[0])
-                    break
-                if " " + str(y) + "'" in titleStr:
-                    count[l.index(x)] += titleStr.count(" " + str(y) + "'")
-                    results.append(x[0])
-                    break
-                if " " + str(y) + "/" in titleStr:
-                    count[l.index(x)] += titleStr.count(" " + str(y) + "/")
-                    results.append(x[0])
-                    break
-                if "/" + str(y) + " " in titleStr:
-                    count[l.index(x)] += titleStr.count("/" + str(y) + " ")
-                    results.append(x[0])
-                    break
-                if " " + str(y) + ":" in titleStr:
-                    count[l.index(x)] += titleStr.count(" " + str(y) + ":")
-                    results.append(x[0])
-                    break
+                if str(cur) in titleStr:
+                    countTitle = (titleStr.count(" " + str(cur) + " ") + titleStr.count(" " + str(cur) + ".") + \
+                                  titleStr.count(" " + str(cur) + ",") + titleStr.count(" " + str(cur) + "'") + \
+                                  titleStr.count(" " + str(cur) + "/") + titleStr.count("/" + str(cur) + " ") + \
+                                  titleStr.count(" " + str(cur) + ":") + titleStr.count("-" + str(cur) + " "))
+                    if countTitle != 0:
+                        results.append(aliases[0])
+                        count[alias_list.index(aliases)] += countTitle
+                        break
 
     # ABSTRACT
-    # abstractStr = driver.find_element_by_id("abstract").text
     abstractStr = driver.find_element_by_id("abstract").text
 
     if not abstractStr:
         abstractStr = driver.find_element_by_tag_name("patent-text").text
     # print(abstractStr)
 
-    for x in l:
-        # y=str(y).lower()
-        for y in x:
-            y = str(y).lower()
-            if len(str(y)) >= 3:
+    ## aliases - list of aliases for current gene
+    ## cur - the current alias that is being looked for in the text
+    for aliases in alias_list:
+        for cur in aliases:
+            # y=str(y).lower()
+            if len(str(cur)) >= 3:
                 # print("entered")
-                if " " + str(y) + " " in abstractStr:
-                    count[l.index(x)] += abstractStr.count(" " + str(y) + " ")
-                elif " " + str(y) + "." in abstractStr:
-                    count[l.index(x)] += abstractStr.count(" " + str(y) + ".")
-                elif " " + str(y) + "," in abstractStr:
-                    count[l.index(x)] += abstractStr.count(" " + str(y) + ",")
-                elif " " + str(y) + "'" in abstractStr:
-                    count[l.index(x)] += abstractStr.count(" " + str(y) + "'")
-                elif " " + str(y) + "/" in abstractStr:
-                    count[l.index(x)] += abstractStr.count(" " + str(y) + "/")
-                elif "/" + str(y) + " " in abstractStr:
-                    count[l.index(x)] += abstractStr.count("/" + str(y) + " ")
-                elif " " + str(y) + ":" in abstractStr:
-                    count[l.index(x)] += abstractStr.count(" " + str(y) + ":")
+                if str(cur) in abstractStr:
+                    countAbstract = 3 * (
+                                abstractStr.count(" " + str(cur) + " ") + abstractStr.count(" " + str(cur) + ".") + \
+                                abstractStr.count(" " + str(cur) + ",") + abstractStr.count(" " + str(cur) + "'") + \
+                                abstractStr.count(" " + str(cur) + "/") + abstractStr.count("/" + str(cur) + " ") + \
+                                abstractStr.count(" " + str(cur) + ":") + abstractStr.count("-" + str(cur) + " "))
+                    count[alias_list.index(aliases)] += countAbstract
+                    # print(str(temp) + " gene: "+ str(y))
 
     # CLAIMS
-    claims = driver.find_elements_by_class_name("claims")
-
     claimList = []
-    temp = 0
+
+    claims = driver.find_elements_by_class_name("claim-text")
+    num_claims = 0
     for x in claims:
-        if temp == 10:
+        if num_claims >= 10:
             break
         claimList.append(x.text + "\n")
-        temp += 1
+        num_claims += 1
 
+    # print(claimList)
     claimStr = ""
     for x in claimList:
         claimStr += x
 
     # print(claimStr)
-
-    for x in l:
-        for y in x:
-            if len(str(y)) >= 3:
+    for aliases in alias_list:
+        for cur in aliases:
+            if len(str(cur)) >= 3:
                 # print("entered")
-                if " " + str(y) + " " in claimStr:
-                    count[l.index(x)] += claimStr.count(" " + str(y) + " ")
-                elif " " + str(y) + "." in claimStr:
-                    count[l.index(x)] += claimStr.count(" " + str(y) + ".")
-                elif " " + str(y) + "," in claimStr:
-                    count[l.index(x)] += claimStr.count(" " + str(y) + ",")
-                elif " " + str(y) + "'" in claimStr:
-                    count[l.index(x)] += claimStr.count(" " + str(y) + "'")
-                elif " " + str(y) + "/" in claimStr:
-                    count[l.index(x)] += claimStr.count(" " + str(y) + "/")
-                elif "/" + str(y) + " " in claimStr:
-                    count[l.index(x)] += claimStr.count("/" + str(y) + " ")
-                elif " " + str(y) + ":" in claimStr:
-                    count[l.index(x)] += claimStr.count(" " + str(y) + ":")
+                if str(cur) in claimStr:
+                    count[alias_list.index(aliases)] += claimStr.count(" " + str(cur) + " ") + claimStr.count(
+                        " " + str(cur) + ".") + \
+                                                        claimStr.count(" " + str(cur) + ",") + claimStr.count(
+                        " " + str(cur) + "'") + \
+                                                        claimStr.count(" " + str(cur) + "/") + claimStr.count(
+                        "/" + str(cur) + " ") + \
+                                                        claimStr.count(" " + str(cur) + ":") + claimStr.count(
+                        "-" + str(cur) + " ")
 
-    #print(count)
-    count = [float(x) for x in count]
-    test = zip(count,genes)
-    for x in test:
-        print(x)
-    r = sorted(zip(count, l), reverse=True)[:3]
+    sort = sorted(zip(count, genes), reverse=True)
+    count = 0
+    r = []
+    print_stuff = []
+    for x in sort:
+        if count >= 3:
+            break
+        elif x[1] not in results:
+            r.append(x)
+            print_stuff.append(x)
+            count += 1
+        elif x[1] in results:
+            print_stuff.append(x)
+
     for x in r:
         if x[0] >= target_frequency:
-            results.append(x[1][0])
-
-    # print(r)
+            results.append(x[1])
+        elif x[0] > 0 and len(results) == 0:
+            results.append(x[1])
+            break
 
     return results
