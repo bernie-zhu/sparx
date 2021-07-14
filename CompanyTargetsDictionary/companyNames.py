@@ -1,4 +1,4 @@
-names = ["Hoffmann+La+Roche",
+names = ["Roche",
          "Novartis",
          "Pfizer",
          "Merck+&+Co",

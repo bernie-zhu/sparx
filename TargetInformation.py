@@ -15,23 +15,15 @@ aliases = []
 
 
 def targetinformation():
-    driver = webdriver.Firefox()
-
-    for target in t:
-        targetalias = OpenTargetAndAliases()
-        diseaseconditions, alias, genename, drivr, link2, closestpossibletarget = targetalias.getopentargets(target, driver)
-        diseases.append(diseaseconditions)
-
-        #aliases.append(alias)
-        print(diseaseconditions)
-        #print(aliases)
-        #print(alias)
-
-    driver.close()
-    return aliases
+    print(len(testFile.g))
+    count = 0
+    for f in testFile.genes:
+        if count == 249:
+            print(f)
+        count += 1
 
 def targetinfonew():
-    doggie = testFile.genes
+    doggie = testFile.t
     tar = OpenTargetsAliases.OpenTargetAndAliases()
     driver = webdriver.Firefox()
     rajeevram = []  # list for diseases/conditions

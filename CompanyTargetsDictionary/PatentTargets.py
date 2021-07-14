@@ -3,24 +3,15 @@ from collections import Counter
 import requests
 from selenium.webdriver.firefox import webdriver
 import Parsers.ParsePatent
-import TargetInformation
-import testFile
-from CompanyTargetsDictionary import companyNames
-import gc
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-from selenium import webdriver
-import time
-import xlrd
-import os
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium import webdriver
 import time
 import pandas as pd
 import xlrd
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
+import xlwt
+from xlwt import Workbook
+import xlsxwriter
+
+import testFile
 
 
 class PatentTargets:
@@ -28,25 +19,23 @@ class PatentTargets:
     def __init__(self, company):
         self.company = company
 
-    def targetsforpatents(self, frequency, genes, aliases, pages, diseases, claimNumber):
+    def targetsforpatents(self, frequency, genes, aliases, pages, claimNumber):
         driver = webdriver.Firefox(
             executable_path=r"C:\Python\Python38\geckodriver.exe")  # make sure this exists somewhere in a local, varies from user to user, and copy the path here
 
         page = 0
         numberOfPages = pages
         populartargets = []
+        patents = []
+        firstlist = {}
 
         while page < numberOfPages:
             main_url = "https://patents.google.com/"
-            params = "?assignee=" + self.company + "&after=priority:20110609&type=PATENT&num=10&sort=new&page=" + str(
+            params = "?assignee=" + self.company + "&country=US&after=priority:20110101&type=PATENT&num=10&sort=new&page=" + str(
                 page)
             # params = "?q=(tp53)&num=10&oq=(tp53)"
-
             res = requests.get(
-                "https://patents.google.com/xhr/query?url=assignee%3D" + self.company + "%26after%3Dpriority"
-                                                                                        "%3A20110609%26type"
-                                                                                        "%3DPATENT%26num%3D1"
-                                                                                        "&exp=")
+                "https://patents.google.com/xhr/query?url=assignee%3D" + self.company + "%26country%3DUS%26after%3Dpriority%3A20110101%26type%3DPATENT%26num%3D10%26sort%3Dnew&exp=")
             # res = requests.get("https://patents.google.com/xhr/query?url=q%3D(tp53)%26num%3D10%26oq%3D(tp53)&exp=")
 
             main_data = res.json()
@@ -56,96 +45,92 @@ class PatentTargets:
                 num = data[0]['result'][i]['patent']['publication_number']
                 driver.get(main_url + "patent/" + num + "/en" + params)
                 time.sleep(3)
-                populartargets.append(Parsers.ParsePatent.parse(driver, aliases, genes, frequency, claimNumber))
-                print(num + ":" + populartargets)
+                print(firstlist)
 
             page += 1
 
         driver.close()
+        return firstlist
 
-        flattentargets = [val for sublist in populartargets for val in sublist]
-        targetdict = dict(Counter(flattentargets))
-        sor = sorted(targetdict.items(), key=lambda x: x[1], reverse=True)
-        sor = list(sor[:3])
-        finishedList = []
+def TopGenesInPatents(targets):
 
-        returnList = []
-        for target in sor:
-            target = list(target)
-            for disease in diseases:
-                if target[0] == disease[0]:
-                    returnList.append(target[0])
-                    returnList.append(disease[1:])
-                    break
+    my_dict = {i:targets.count(i) for i in targets}
+    sor = sorted(my_dict.items(), key=lambda x: x[1], reverse=True)
+    sor = list(sor)
 
-        return sor
+    targetList = []
+    amountList = []
+    total = 0
+    for target in sor:
+        target = list(target)
+        targetList.append(target[0])
+        amountList.append(target[1])
+        total += target[1]
 
+    df = pd.DataFrame.from_dict({'Column1': targetList, 'Column2': amountList})
+    writer = pd.ExcelWriter('Popular2.xlsx', engine='xlsxwriter')
+    df.to_excel(writer, sheet_name='Genes', index=False)
+    writer.save()
 
-def targetintodict():
-    targetfrequency = int(input("Enter Target Limit: "))
-    pages = int(input("How many pages of patents do you want to search through: "))
-    claim = int(input("How many claims do you want to search through:"))
-
-    allCompanies = companyNames.companies
-    aliases = newaliasesfromfile()
-    genes = genesfromfile()
-    diseases = diseasesfromfile()
-
-    for company, links in allCompanies.items():
-        targets = PatentTargets(company)
-        allCompanies[company] = targets.targetsforpatents(targetfrequency, genes, aliases, pages, diseases, claim)
-
-    return allCompanies
-
-
-def testparser():
-    targets = []
-    driver = webdriver.Firefox(
-        executable_path=r"C:\Python\Python38\geckodriver.exe")  # make sure this exists somewhere in a local, varies from user to user, and copy the path here
-    driver.get("https://patents.google.com/patent/US2018222985A1")
-    time.sleep(3)
-    aliases = newaliasesfromfile()
-    genes = genesfromfile()
-    diseases = diseasesfromfile()
-    targets.append(Parsers.ParsePatent.parse(driver, aliases, genes, 2))
-    driver.close
-    flattentargets = [val for sublist in targets for val in sublist]
-    targetdict = dict(Counter(flattentargets))
-    sor = sorted(targetdict.items(), key=lambda x: x[1], reverse=True)
-    sor = sor[:3]
     return sor
 
-def testmanual():
+def RunningCompanyData(company):
+    patents = PatentsFromFile()
+    #patents = testFile.manual_patents
+
+    return testmanual(patents, company)
+
+def RunningCompanyFinal(info):
+    diseases = diseasesfromfile()
+
+    return TopGenesInPatents(info)
+
+def testmanual(patents, company):
+    newPatents = []
+
+    for patent in patents:
+        patent = str(patent)
+        newPatent = patent.replace('-', '')
+
+        if len(str(newPatent)) == 14:
+            newPatent = newPatent[0:6] + "0" + newPatent[6:]
+        newPatents.append(newPatent)
+
+    wb = Workbook()
+    sheet1 = wb.add_sheet('Sheet 1')
+    sheet1.write(0, 0, company + ":")
     i = 0
     driver = webdriver.Firefox(
-        executable_path=r"C:\Python\Python38\geckodriver.exe")  # make sure this exists somewhere in a local, varies from user to user, and copy the path here
+        executable_path=r"C:\Python\Python38\geckodriver.exe")
 
-    while i < len(testFile.manual_patents):
-        targets = []
-        patentsubstring = testFile.manual_patents[i][0:6]
-        patentendstring = testFile.manual_patents[i][6:]
+    aliases = newaliasesfromfile()
+    genes = genesfromfile()
+    firstlist = {}
 
-        if (len(testFile.manual_patents[i]) < 14):
-            driver.get("https://patents.google.com/patent/" + testFile.manual_patents[i])
-        else:
-            driver.get("https://patents.google.com/patent/" + patentsubstring + "0" + patentendstring)
+    while i < len(newPatents):
+        driver.get("https://patents.google.com/patent/" + newPatents[i])
+        time.sleep(5)
 
-        time.sleep(3)
+        targets = Parsers.ParsePatent.parse(driver, aliases, genes, 3, 10)
+        k = 0
 
-        aliases = newaliasesfromfile()
-        genes = genesfromfile()
-        diseases = diseasesfromfile()
+        if len(targets) > 13:
+            i = i + 1
+            continue
 
-        targets.append(Parsers.ParsePatent.parse(driver, aliases, genes, 2, 10))
-        flattentargets = [val for sublist in targets for val in sublist]
-        targetdict = dict(Counter(flattentargets))
-        sor = sorted(targetdict.items(), key=lambda x: x[1], reverse=True)
-        sor = sor[:3]
-        print(str(testFile.manual_patents[i]) + " - " + str(sor))
+        sheet1.write(i + 1, 0, newPatents[i])
+
+        for target in targets:
+            sheet1.write(i + 1, k + 1, target)
+            k = k + 1
+        wb.save('RocheData2.xls')
+
+        firstlist[newPatents[i]] = targets
+        print(i)
         i = i + 1
 
     driver.close
-    return sor
+    return firstlist
 
 
 def aliasesfromfile():
@@ -206,3 +191,18 @@ def diseasesFromTarget(foundTarget, diseases):
     for target in diseases:
         if target[0] == foundTarget:
             return target[1:]
+
+def PatentsFromFile():
+    pepega = pd.read_excel(r"C:\Users\zaids\PycharmProjects\sparx\CompanyTargetsDictionary\Novartis_Patent_Data.xls")
+    firstColumn = pepega["search URL:"]
+    firstColumn.pop(0)
+
+    return firstColumn
+
+def CompanyGenesFromFile():
+    pepega = pd.read_excel(r"C:\Users\zaids\Downloads\NovartisData.xls")
+    firstColumn = list(pepega["Unnamed: 1"]) + list(pepega["Unnamed: 2"]) + list(pepega["Unnamed: 3"]) + list(pepega["Unnamed: 4"]) + list(pepega["Unnamed: 5"]) + list(pepega["Unnamed: 6"]) + list(pepega["Unnamed: 7"]) + list(pepega["Unnamed: 8"]) + list(pepega["Unnamed: 9"]) + list(pepega["Unnamed: 10"])
+
+    newlist = [x for x in firstColumn if pd.isnull(x) == False and x != 'nan']
+
+    return newlist
