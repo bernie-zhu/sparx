@@ -6279,3 +6279,50 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
 JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1626283515892	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1626283706597	Marionette	INFO	Stopped listening on port 60875
+1626292787495	geckodriver	INFO	Listening on 127.0.0.1:57901
+1626292790567	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileJEv0hW"
+1626292791553	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileJEv0hW\\search.json.mozlz4", (void 0)))
+1626292794768	Marionette	INFO	Listening on port 57909
+1626292794805	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1626293938720	Marionette	INFO	Stopped listening on port 57909
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileKHtxAt\\search.json.mozlz4", (void 0)))
+1626292903076	Marionette	INFO	Listening on port 58036
+1626292903266	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1626295030303	Marionette	INFO	Stopped listening on port 58036
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1626295142135	geckodriver	INFO	Listening on 127.0.0.1:55826
+1626295145234	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileCkjctu"
+1626295146103	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileCkjctu\\search.json.mozlz4", (void 0)))
+1626295150348	Marionette	INFO	Listening on port 55834
+1626295150717	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1626296584890	Marionette	INFO	Stopped listening on port 55834
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1626711739882	geckodriver	INFO	Listening on 127.0.0.1:62125
+1626711742931	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileCCBSO0"
+1626711743749	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\zaids\\AppData\\Local\\Temp\\rust_mozprofileCCBSO0\\search.json.mozlz4", (void 0)))
+1626711746268	Marionette	INFO	Listening on port 62133
+1626711746659	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE

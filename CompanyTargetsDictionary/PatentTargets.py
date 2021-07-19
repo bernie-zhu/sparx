@@ -1,5 +1,4 @@
 from datetime import time
-from collections import Counter
 import requests
 from selenium.webdriver.firefox import webdriver
 import Parsers.ParsePatent
@@ -7,12 +6,7 @@ from selenium import webdriver
 import time
 import pandas as pd
 import xlrd
-import xlwt
 from xlwt import Workbook
-import xlsxwriter
-
-import testFile
-
 
 class PatentTargets:
 
@@ -68,7 +62,7 @@ def TopGenesInPatents(targets):
         total += target[1]
 
     df = pd.DataFrame.from_dict({'Column1': targetList, 'Column2': amountList})
-    writer = pd.ExcelWriter('Popular2.xlsx', engine='xlsxwriter')
+    writer = pd.ExcelWriter('PopularTargets.xlsx', engine='xlsxwriter')
     df.to_excel(writer, sheet_name='Genes', index=False)
     writer.save()
 
@@ -193,14 +187,14 @@ def diseasesFromTarget(foundTarget, diseases):
             return target[1:]
 
 def PatentsFromFile():
-    pepega = pd.read_excel(r"C:\Users\zaids\PycharmProjects\sparx\CompanyTargetsDictionary\Novartis_Patent_Data.xls")
+    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\Roche\Roche_Patent_Data.xls")
     firstColumn = pepega["search URL:"]
     firstColumn.pop(0)
 
     return firstColumn
 
 def CompanyGenesFromFile():
-    pepega = pd.read_excel(r"C:\Users\zaids\Downloads\NovartisData.xls")
+    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\Novartis\NovartisData.xls")
     firstColumn = list(pepega["Unnamed: 1"]) + list(pepega["Unnamed: 2"]) + list(pepega["Unnamed: 3"]) + list(pepega["Unnamed: 4"]) + list(pepega["Unnamed: 5"]) + list(pepega["Unnamed: 6"]) + list(pepega["Unnamed: 7"]) + list(pepega["Unnamed: 8"]) + list(pepega["Unnamed: 9"]) + list(pepega["Unnamed: 10"])
 
     newlist = [x for x in firstColumn if pd.isnull(x) == False and x != 'nan']

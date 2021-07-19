@@ -1,8 +1,11 @@
+import nltk
 from selenium.webdriver.firefox import webdriver
-
+import enchant
+from nltk.corpus import words
 import OpenTargetsAliases
 import gettinggenelist
 import testFile
+from CompanyTargetsDictionary.PatentTargets import newaliasesfromfile
 from OpenTargetsAliases import OpenTargetAndAliases
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium import webdriver
@@ -53,4 +56,19 @@ def targetinfonew():
     print()
     print("Conditions")
     print(rajeevram)
+
+def ThreeLetterAliases():
+    wordList = []
+    wordSet = set(words.words())
+    count = 0
+
+    aliases = newaliasesfromfile()
+    for alias in aliases:
+        for word in alias:
+            if len(str(word)) == 3:
+                if str(word).lower() in wordSet and str(word).lower() not in wordList:
+                    wordList.append(str(word).lower())
+    print(wordList)
+    print(len(wordList))
+
 
