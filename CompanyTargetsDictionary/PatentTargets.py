@@ -194,7 +194,7 @@ def PatentsFromFile():
     return firstColumn
 
 def CompanyGenesFromFile():
-    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\Novartis\NovartisData.xls")
+    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\Roche\RocheDataNew.xls")
     firstColumn = list(pepega["Unnamed: 1"]) + list(pepega["Unnamed: 2"]) + list(pepega["Unnamed: 3"]) + list(pepega["Unnamed: 4"]) + list(pepega["Unnamed: 5"]) + list(pepega["Unnamed: 6"]) + list(pepega["Unnamed: 7"]) + list(pepega["Unnamed: 8"]) + list(pepega["Unnamed: 9"]) + list(pepega["Unnamed: 10"])
 
     newlist = [x for x in firstColumn if pd.isnull(x) == False and x != 'nan']

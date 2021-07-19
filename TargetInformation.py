@@ -65,7 +65,7 @@ def ThreeLetterAliases():
     aliases = newaliasesfromfile()
     for alias in aliases:
         for word in alias:
-            if len(str(word)) == 3:
+            if len(str(word)) == 7:
                 if str(word).lower() in wordSet and str(word).lower() not in wordList:
                     wordList.append(str(word).lower())
     print(wordList)
