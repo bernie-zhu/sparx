@@ -126,6 +126,22 @@ def testmanual(patents, company):
     driver.close
     return firstlist
 
+def testOnePatent():
+    driver = webdriver.Firefox(
+        executable_path=r"C:\Python\Python38\geckodriver.exe")
+
+    aliases = newaliasesfromfile()
+    genes = genesfromfile()
+    firstlist = {}
+
+    driver.get("https://patents.google.com/patent/US20210163904A1/en?oq=US20210163904A1")
+    time.sleep(5)
+
+    targets = Parsers.ParsePatent.parse(driver, aliases, genes, 3, 10)
+
+    driver.close
+    return firstlist
+
 
 def aliasesfromfile():
     wb = xlrd.open_workbook(
@@ -187,15 +203,15 @@ def diseasesFromTarget(foundTarget, diseases):
             return target[1:]
 
 def PatentsFromFile():
-    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\Roche\Roche_Patent_Data.xls")
+    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\Roche\Roche_Patent_Data1.xls")
     firstColumn = pepega["search URL:"]
     firstColumn.pop(0)
 
     return firstColumn
 
 def CompanyGenesFromFile():
-    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\Roche\RocheDataNew.xls")
-    firstColumn = list(pepega["Unnamed: 1"]) + list(pepega["Unnamed: 2"]) + list(pepega["Unnamed: 3"]) + list(pepega["Unnamed: 4"]) + list(pepega["Unnamed: 5"]) + list(pepega["Unnamed: 6"]) + list(pepega["Unnamed: 7"]) + list(pepega["Unnamed: 8"]) + list(pepega["Unnamed: 9"]) + list(pepega["Unnamed: 10"])
+    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\Roche\Roche_Data_Update1real.xls")
+    firstColumn = list(pepega["Unnamed: 1"]) + list(pepega["Unnamed: 2"]) + list(pepega["Unnamed: 3"]) + list(pepega["Unnamed: 4"]) + list(pepega["Unnamed: 5"]) + list(pepega["Unnamed: 6"]) + list(pepega["Unnamed: 7"]) + list(pepega["Unnamed: 8"])
 
     newlist = [x for x in firstColumn if pd.isnull(x) == False and x != 'nan']
 
