@@ -60,6 +60,7 @@ def TopGenesInPatents(targets):
         targetList.append(target[0])
         amountList.append(target[1])
         total += target[1]
+    print(total)
 
     df = pd.DataFrame.from_dict({'Genes': targetList, '# of Patents': amountList})
     writer = pd.ExcelWriter('PopularTargets.xlsx', engine='xlsxwriter')
@@ -102,7 +103,7 @@ def testmanual(patents, company):
     firstlist = {}
 
     while i < len(newPatents):
-        driver.get(newPatents[i])
+        driver.get("https://patents.google.com/patent/" + newPatents[i])
         time.sleep(5)
 
         targets = Parsers.ParsePatent.parse(driver, aliases, genes, 3, 10)
@@ -134,7 +135,7 @@ def testOnePatent():
     genes = genesfromfile()
     firstlist = {}
 
-    driver.get("https://patents.google.com/patent/US20170173128A1/en?oq=US20170173128A1")
+    driver.get("https://patents.google.com/patent/US10501442B2/en?oq=US10501442B2")
     time.sleep(5)
 
     targets = Parsers.ParsePatent.parse(driver, aliases, genes, 3, 10)
@@ -168,7 +169,7 @@ def newaliasesfromfile():
     poogers = []
     for dog in range(len(pepega.values)):
         peepo = []
-        for cow in range(len(pepega.values[dog]) - 1):
+        for cow in range(len(pepega.values[dog])):
             if pd.isnull(pepega.values[dog][cow]):
                 break
             peepo.append(pepega.values[dog][cow])
@@ -203,15 +204,15 @@ def diseasesFromTarget(foundTarget, diseases):
             return target[1:]
 
 def PatentsFromFile():
-    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\Roche\Roche_Patent_Data1.xls")
-    firstColumn = pepega["Unnamed: 8"]
+    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\Novartis\Novartis_Patent_Data.xls")
+    firstColumn = pepega["search URL:"]
     firstColumn.pop(0)
 
     return firstColumn
 
 def CompanyGenesFromFile():
-    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\Roche\SeattleGeneticsData.xls")
-    firstColumn = list(pepega["Unnamed: 1"]) + list(pepega["Unnamed: 2"]) + list(pepega["Unnamed: 3"]) + list(pepega["Unnamed: 4"]) + list(pepega["Unnamed: 5"]) #+ list(pepega["Unnamed: 6"]) + list(pepega["Unnamed: 7"]) + list(pepega["Unnamed: 8"]) + list(pepega["Unnamed: 9"])
+    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\JJ\JJData.xls")
+    firstColumn = list(pepega["Unnamed: 1"]) + list(pepega["Unnamed: 2"]) + list(pepega["Unnamed: 3"]) + list(pepega["Unnamed: 4"]) + list(pepega["Unnamed: 5"]) + list(pepega["Unnamed: 6"]) + list(pepega["Unnamed: 7"]) + list(pepega["Unnamed: 8"]) + list(pepega["Unnamed: 9"])
 
     newlist = [x for x in firstColumn if pd.isnull(x) == False and x != 'nan']
 
