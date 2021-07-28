@@ -5,6 +5,7 @@ import Parsers.ParsePatent
 from selenium import webdriver
 import time
 import pandas as pd
+from openpyxl import load_workbook
 import xlrd
 from xlwt import Workbook
 
@@ -211,9 +212,62 @@ def PatentsFromFile():
     return firstColumn
 
 def CompanyGenesFromFile():
-    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\JJ\JJData.xls")
-    firstColumn = list(pepega["Unnamed: 1"]) + list(pepega["Unnamed: 2"]) + list(pepega["Unnamed: 3"]) + list(pepega["Unnamed: 4"]) + list(pepega["Unnamed: 5"]) + list(pepega["Unnamed: 6"]) + list(pepega["Unnamed: 7"]) + list(pepega["Unnamed: 8"]) + list(pepega["Unnamed: 9"])
+    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\UCB\UCBData.xls")
+    firstColumn = list(pepega["Unnamed: 1"]) + list(pepega["Unnamed: 2"]) + list(pepega["Unnamed: 3"]) + list(pepega["Unnamed: 4"]) + list(pepega["Unnamed: 5"]) + list(pepega["Unnamed: 6"]) # + list(pepega["Unnamed: 7"]) + list(pepega["Unnamed: 8"]) + list(pepega["Unnamed: 9"])
 
     newlist = [x for x in firstColumn if pd.isnull(x) == False and x != 'nan']
 
     return newlist
+
+def ReadFromGeneData():
+    genes = []
+    anotherOne = []
+    geneForCompanies = []
+    numberForCompanies = []
+    companies = []
+    pepega = pd.read_excel(r"C:\Users\zaids\OneDrive\Desktop\Companies\CompanyGeneData.xls")
+    i = 0
+    while i < 176:
+        if i % 4 == 1:
+            genes += list(pepega["Unnamed: " + str(i)])
+        i += 1
+    genes = [x for x in genes if pd.isnull(x) == False and x != 'nan']
+    genes = list(set(genes))
+
+    k = 0
+    while k < 176:
+        if k % 4 == 0:
+            companies += list(pepega["Unnamed: " + str(k)])
+            companies = [x for x in companies if pd.isnull(x) == False and x != 'nan']
+        elif k % 4 == 1:
+            geneForCompanies += list(pepega["Unnamed: " + str(k)])
+            geneForCompanies = [x for x in geneForCompanies if pd.isnull(x) == False and x != 'nan']
+        elif k % 4 == 2:
+            numberForCompanies += list(pepega["Unnamed: " + str(k)])
+            numberForCompanies = [x for x in numberForCompanies if pd.isnull(x) == False and x != 'nan']
+        elif k % 4 == 3:
+            for gene in genes:
+                if gene in geneForCompanies:
+                    returnList = []
+                    indexGene = geneForCompanies.index(gene)
+                    returnList.append(gene)
+                    returnList.append(companies[0])
+                    returnList.append(int(numberForCompanies[indexGene]))
+                    anotherOne.append(returnList)
+                    #print(returnList)
+            companies.clear()
+            geneForCompanies.clear()
+        k += 1
+
+
+    #anodaOne = anotherOne.sort(key=lambda x: str(x[0]))
+    sortedList = sorted(anotherOne, key=lambda x: x[0])
+    list1 = [item[0] for item in sortedList]
+    list2 = [item[1] for item in sortedList]
+    list3 = [item[2] for item in sortedList]
+
+    writer = pd.ExcelWriter('test.xlsx', engine='openpyxl')
+    wb = writer.book
+
+
+

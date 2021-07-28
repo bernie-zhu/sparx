@@ -5,5 +5,6 @@ from CompanyTargetsDictionary import PatentTargets
 if __name__ == '__main__':
     #print(PatentTargets.RunningCompanyData("Roche"))
     #print(PatentTargets.testOnePatent())
-    print(PatentTargets.RunningCompanyFinal(PatentTargets.CompanyGenesFromFile()))
+    #print(PatentTargets.RunningCompanyFinal(PatentTargets.CompanyGenesFromFile()))
     #print(TargetInformation.ThreeLetterAliases())
+    print(PatentTargets.ReadFromGeneData())
